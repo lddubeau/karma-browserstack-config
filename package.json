@@ -1,0 +1,44 @@
+{
+  "name": "karma-browserstack-config",
+  "version": "1.0.0",
+  "description": "This is a package that helps managing the configuration of BrowserStack browsers.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": "https://github.com/lddubeau/karma-browserstack-config.git",
+  "scripts": {
+    "test": "mocha",
+    "posttest": "eslint *.js test/*.js",
+    "preversion": "npm test",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "npm publish",
+    "postpublish": "git push origin --follow-tags"
+  },
+  "keywords": [
+    "Karma",
+    "BrowserStack",
+    "configuration"
+  ],
+  "author": "Louis-Dominique <ldd@lddubeau.com>",
+  "license": "MIT",
+  "dependencies": {
+    "deep-equal": "^1.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-angular": "^7.5.0",
+    "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.0.12",
+    "eslint": "^5.15.1",
+    "eslint-config-lddubeau-base": "^3.0.1",
+    "husky": "^1.3.1",
+    "mocha": "^6.0.2",
+    "renovate-config-lddubeau": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
