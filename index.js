@@ -69,7 +69,7 @@ class ConfigBuilder {
         base,
         browser: "Opera",
         os: "Windows",
-        os_version: "10",
+        os_version: "8",
       },
       [`${prefix}Edge`]: {
         base,
