@@ -179,7 +179,7 @@ class ConfigBuilder {
       if (!excludes.some(exclude => (exclude instanceof RegExp ?
                                      exclude.test(name) :
                                      exclude === name))) {
-        ret[name] = Object.assign({}, config);
+        ret[name] = { ...config };
       }
     }
 
