@@ -23,7 +23,7 @@
   "author": "Louis-Dominique <ldd@lddubeau.com>",
   "license": "MIT",
   "dependencies": {
-    "deep-equal": "^2.0.2"
+    "deep-equal": "^2.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
