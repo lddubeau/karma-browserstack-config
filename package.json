@@ -26,8 +26,8 @@
     "deep-equal": "^2.0.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-angular": "^9.1.2",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-angular": "^19.5.0",
     "chai": "^4.2.0",
     "conventional-changelog-cli": "^2.1.1",
     "eslint": "^7.15.0",
